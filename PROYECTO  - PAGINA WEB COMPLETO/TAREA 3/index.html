@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Ecuador</title>
+
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="titulo">
+            BIENVENIDO A TECHSTORE
+            <span>Tecnología que te conecta</span>
+        </h1>
+    </header>
+
+
+    <nav class="nav-bg">
+        <ul class="navegacion-principal contenedor">
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="InfoNosotros.html">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="contenido-hero">
+            <p class="hero-texto">
+                Venta de celulares, accesorios y tecnología original
+                <img src="icons/mundo.svg" alt="Tecnología">
+            </p>
+
+            <p class="envios">
+                <img src="icons/BOX.svg" alt="Envíos">
+                Envíos a Guayaquil, Ecuador
+            </p>
+
+            <a class="boton" href="#contacto">Comprar ahora</a>
+        </div>
+    </section>
+
+    <!-- CUADRITOS PRINCIPAL -->
+    <main class="contenedor sombra">
+
+        <!-- TIPO DE PRODUCTOS -->
+        <section>
+            <h2>Categorías</h2>
+
+            <div class="lenguajes">
+
+                <article class="lenguaje">
+                    <h3>Celulares</h3>
+                    <div class="iconos">
+                        <p>Apple, Samsung, Redmi, Poco</p>
+                        <img src="icons/mobile.svg" alt="Celulares">
+                    </div>
+                </article>
+
+                <article class="lenguaje">
+                    <h3>Audífonos</h3>
+                    <div class="iconos">
+                        <p>Razer y Logitech</p>
+                        <img src="icons/headset.svg" alt="Audífonos">
+                    </div>
+                </article>
+
+                <article class="lenguaje">
+                    <h3>AirPods</h3>
+                    <div class="iconos">
+                        <p>Apple, Samsung, Redmi</p>
+                        <img src="icons/airpods.svg" alt="AirPods">
+                    </div>
+                </article>
+
+                <article class="lenguaje">
+                    <h3>Tablets</h3>
+                    <div class="iconos">
+                        <p>Apple y Samsung</p>
+                        <img src="icons/tablet.svg" alt="Tablets">
+                    </div>
+                </article>
+
+                <article class="lenguaje">
+                    <h3>Smartwatch</h3>
+                    <div class="iconos">
+                        <p>Apple, Samsung, Redmi</p>
+                        <img src="icons/smartw.svg" alt="Smartwatch">
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TABLA DE PRECIOS -->
+        <section>
+            <h2>Productos Destacados</h2>
+
+            <table class="tabla-productos">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Modelo</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Celular</td>
+                        <td>iPhone 16</td>
+                        <td>$1500</td>
+                    </tr>
+
+                    <tr>
+                        <td>Celular</td>
+                        <td>Samsung S25</td>
+                        <td>$1000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Audífonos</td>
+                        <td>Razer BlackShark</td>
+                        <td>$250</td>
+                    </tr>
+
+                    <tr>
+                        <td>Smartwatch</td>
+                        <td>Apple Watch Serie 11</td>
+                        <td>$450</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Soporte y Ventas</h2>
+
+        <form id="form" class="formulario">
+            <fieldset>
+                <legend>Contáctanos</legend>
+
+                <div class="contenedor-campos">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input class="input-text" type="text" id="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo</label>
+                        <input class="input-text" type="email" id="correo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input class="input-text" type="tel" id="telefono">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="input-text" id="mensaje"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <p>© 2025 William Carvajal - TechStore Ecuador</p>
+    </footer>
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>

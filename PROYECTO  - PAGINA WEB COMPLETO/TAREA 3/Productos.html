@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - TechStore</title>
+
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <h1 class="titulo">
+            NUESTROS PRODUCTOS
+            <span>Explora lo mejor en tecnología</span>
+        </h1>
+    </header>
+
+
+    <nav class="nav-bg">
+        <ul class="navegacion-principal contenedor">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a class="activo" href="Productos.html">Productos</a></li>
+            <li><a href="InfoNosotros.html">Nosotros</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor sombra">
+
+        <h2>Galería de Productos</h2>
+
+
+        <!--          SLIDESHOW        -->
+
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img src="images/Iphone.png" alt="iPhone" class="slide-img">
+            </div>
+
+            <div class="slide fade">
+                <img src="images/Samsung.png" alt="Samsung" class="slide-img">
+            </div>
+
+            <div class="slide fade">
+                <img src="images/Xiaomi.jpeg" alt="Xiaomi" class="slide-img">
+            </div>
+
+            <!-- Flechas a los lados -->
+            <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+            <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+
+        </div>
+
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="slideActual(1)"></span>
+            <span class="dot" onclick="slideActual(2)"></span>
+            <span class="dot" onclick="slideActual(3)"></span>
+        </div>
+
+
+        <!--   LISTA DE LO QUE SE VENDE -->
+
+        <section style="margin-top: 4rem;">
+            <h2>Nuestros Productos</h2>
+
+            <div class="lenguajes">
+
+                <article class="lenguaje">
+                    <h3>iPhone</h3>
+                    <div class="iconos">
+                        <p>Iphone 16</p>
+                        <img src="icons/mobile.svg" alt="iPhone">
+                    </div>
+                </article>
+
+                <article class="lenguaje">
+                    <h3>Samsung </h3>
+                    <div class="iconos">
+                        <p>S23 Ultra</p>
+                        <img src="icons/mobile.svg" alt="Samsung">
+                    </div>
+                </article>
+
+                <article class="lenguaje">
+                    <h3>Xiaomi</h3>
+                    <div class="iconos">
+                        <p>Note & Redmi</p>
+                        <img src="icons/mobile.svg" alt="Xiaomi">
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2025 TechStore Ecuador</p>
+    </footer>
+
+<script src="js/slideshow.js"></script>
+
+
+
+</body>
+</html>
