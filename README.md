@@ -1,2 +1,0 @@
-# Universidad
-Proyecto primer parcial
